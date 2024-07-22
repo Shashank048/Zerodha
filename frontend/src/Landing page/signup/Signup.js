@@ -13,7 +13,7 @@ function Signup() {
     event.preventDefault();
     setError(null); // Clear any previous errors
     try {
-      const response = await fetch('http://localhost:5000/signup', { // Replace with your actual backend URL
+      const response = await fetch('https://zerodha-nu.vercel.app/signup', { // Replace with your actual backend URL
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

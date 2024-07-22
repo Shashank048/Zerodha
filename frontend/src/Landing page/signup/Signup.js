@@ -19,7 +19,7 @@ function Signup() {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ email, password }),
-      timeout: 30000,
+      timeout: 10000,
     });
 
      if (!response.ok) {

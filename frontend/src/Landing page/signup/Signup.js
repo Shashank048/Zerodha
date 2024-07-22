@@ -12,6 +12,7 @@ function Signup() {
   const handleSubmit = async (event) => {
   event.preventDefault();
   setError(null); // Clear any previous errors
+     console.log('onSubmit called:', event);
   try {
     const response = await fetch('https://zerodha-nu.vercel.app/signup', {
       method: 'POST',

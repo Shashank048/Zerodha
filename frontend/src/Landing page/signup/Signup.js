@@ -21,8 +21,9 @@ function Signup() {
       body: JSON.stringify({ email, password }),
     });
 
-    if (!response.ok) {
-      throw new Error(response.statusText);
+     if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(`Error: ${response.status} ${response.statusText} - ${errorData.message}`);
     }
 
     const data = await response.json();

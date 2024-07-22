@@ -27,7 +27,7 @@ function Signup() {
         setSuccess('Signup successful!');
         setError(null);
         setTimeout(() => {
-          window.location.href = 'http://localhost:3006/dashboard';
+          window.location.href = 'https://zerodha-qzdw.vercel.app/dashboard';
         }, 3000);
       }else {
         setError(data.msg);

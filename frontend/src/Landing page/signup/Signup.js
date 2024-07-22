@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState , Signup } from 'react';
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 
-function Signup() {
+export default class signup extends Signup() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
@@ -117,4 +117,4 @@ function Signup() {
   );
 };
 
-export default Signup;
+

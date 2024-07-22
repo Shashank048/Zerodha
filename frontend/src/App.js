@@ -30,7 +30,7 @@
 
 //export default ExampleComponent;
 
-const apiUrl = process.env.REACT_APP_API_URL;
+const apiUrl = process.env.REACT_APP_BACKEND_URL;
 const token = 'your-auth-token';
 
 fetch(`${apiUrl}/api/data`, {

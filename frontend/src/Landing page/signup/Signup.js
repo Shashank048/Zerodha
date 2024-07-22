@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
+import axios from 'axios';
 
 function Signup() {
   const [email, setEmail] = useState('');
@@ -12,32 +13,21 @@ function Signup() {
   const handleSubmit = async (event) => {
   event.preventDefault();
   setError(null); // Clear any previous errors
-     console.log('onSubmit called:', event);
+
   try {
-    const response = await fetch('https://zerodha-7nh0.onrender.com/signup', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ email, password }),
-      timeout: 30000,
+    const response = await axios.post('https://zerodha-7nh0.onrender.com/signup', {
+      email,
+      password
     });
 
-     if (!response.ok) {
-      const errorData = await response.json();
-      throw new Error(`Error: ${response.status} ${response.statusText} - ${errorData.message}`);
-    }
-
-    const data = await response.json();
-
-    if (response.ok) {
+    if (response.status === 200) {
       setSuccess('Signup successful!');
       setError(null);
       setTimeout(() => {
         window.location.href = 'https://zerodha-fdty.vercel.app/dashboard';
       }, 3000);
     } else {
-      setError(data.msg);
+      setError(response.data.msg);
       setSuccess(null);
     }
   } catch (err) {

@@ -14,7 +14,7 @@ function Signup() {
   setError(null); // Clear any previous errors
      console.log('onSubmit called:', event);
   try {
-    const response = await fetch('https://zerodha-nu.vercel.app/signup', {
+    const response = await fetch('https://zerodha-five.vercel.app/signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ function Signup() {
       setSuccess('Signup successful!');
       setError(null);
       setTimeout(() => {
-        window.location.href = 'https://zerodha-qzdw.vercel.app/dashboard';
+        window.location.href = 'https://zerodha-fdty.vercel.app/dashboard';
       }, 3000);
     } else {
       setError(data.msg);

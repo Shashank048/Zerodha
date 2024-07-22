@@ -1,8 +1,9 @@
-import React, { useState , Signup } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
+import SignupService from 'path-to-signup-service'; 
 
-export default class signup extends Signup() {
+export default function Signup() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);

@@ -16,10 +16,8 @@ const cors = require("cors");
 const app = express();
 app.use(cookieParser());
 
-app.use(cors({
-  origin: 'https://zerodha-x16a.vercel.app', // Replace with your frontend URL
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true, // Allow credentials (cookies, etc.)
+app.use(cors({ 
+  origin: '*'  // Allow all origins
 }));
 app.use(bodyParser.json());
 

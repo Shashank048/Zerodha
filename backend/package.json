@@ -5,7 +5,7 @@
   "scripts": {
     "start": "nodemon index.js"
   },
-  "proxy": "http://localhost:3000",
+  "proxy": "https://zerodha-x16a.vercel.app",
   "author": "",
   "license": "ISC",
   "description": "",

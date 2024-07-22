@@ -14,31 +14,18 @@ function Signup() {
   event.preventDefault();
   setError(null); // Clear any previous errors
 
-  try {
-    const response = await axios.post('https://zerodha-7nh0.onrender.com/signup', {
-      email,
-      password
-    });
-
-    if (response.status === 200) {
-      setSuccess('Signup successful!');
-      setError(null);
-      setTimeout(() => {
-        window.location.href = 'https://zerodha-fdty.vercel.app/dashboard';
-      }, 3000);
-    } else {
-      setError(response.data.msg);
-      setSuccess(null);
-    }
-  } catch (err) {
-    console.log(err);
-    setError('Server error');
-    setSuccess(null);
-  }
-};
-
-
-      
+    
+    axios.post("https://zerodha-7nh0.onrender.com/signup", {
+        email,
+        password,
+      })
+      .then((response) => {
+        console.log(response, "RES");
+      })
+      .catch((error) => {
+        console.log(error, "ERR");
+      });
+ 
   // rest of the component
       return (
     <div className="container border-bottom">

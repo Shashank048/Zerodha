@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const cors = require("cors");
+
 const bcrypt = require('bcryptjs');
 const cookieParser = require('cookie-parser');
 const jwt = require("jsonwebtoken");
@@ -12,10 +12,10 @@ const { PositionsModel } = require("./model/PositionModel");
 const { OrdersModel } = require("./model/OrdersModel");
 
 const PORT =  5000;
-
+const cors = require("cors");
 const app = express();
 app.use(cookieParser());
-app.use(cors({ origin: '*', credentials: true }));
+app.use(cors({ origin: '*' }));
 app.use(bodyParser.json());
 
 mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })

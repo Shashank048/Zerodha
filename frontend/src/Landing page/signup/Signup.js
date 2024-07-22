@@ -86,6 +86,7 @@ function Signup() {
               Sign in
             </button>
             {error && <div style={{ color: 'red' }}>{error}</div>}
+            {success && <div style={{ color: 'green' }}>{success}</div>}
           </form>
 
           <br />

@@ -14,7 +14,7 @@ function Signup() {
   setError(null); // Clear any previous errors
      console.log('onSubmit called:', event);
   try {
-    const response = await fetch('https://zerodha-five.vercel.app/signup', {
+    const response = await fetch('https://zerodha-7nh0.onrender.com/signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

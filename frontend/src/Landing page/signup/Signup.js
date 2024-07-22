@@ -10,35 +10,39 @@ function Signup() {
   const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
-    event.preventDefault();
-    setError(null); // Clear any previous errors
-    try {
-      const response = await fetch('https://zerodha-nu.vercel.app/signup', { // Replace with your actual backend URL
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, password }),
-      });
+  event.preventDefault();
+  setError(null); // Clear any previous errors
+  try {
+    const response = await fetch('https://zerodha-nu.vercel.app/signup', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email, password }),
+    });
 
-      const data = await response.json();
+    if (!response.ok) {
+      throw new Error(response.statusText);
+    }
 
-      if (response.ok) {
-        setSuccess('Signup successful!');
-        setError(null);
-        setTimeout(() => {
-          window.location.href = 'https://zerodha-qzdw.vercel.app/dashboard';
-        }, 3000);
-      }else {
-        setError(data.msg);
-        setSuccess(null);
-      }
-    } catch (err) {
-      console.log(err);
-      setError('Server error');
+    const data = await response.json();
+
+    if (response.ok) {
+      setSuccess('Signup successful!');
+      setError(null);
+      setTimeout(() => {
+        window.location.href = 'https://zerodha-qzdw.vercel.app/dashboard';
+      }, 3000);
+    } else {
+      setError(data.msg);
       setSuccess(null);
     }
-  };
+  } catch (err) {
+    console.log(err);
+    setError('Server error');
+    setSuccess(null);
+  }
+};
 
 
       

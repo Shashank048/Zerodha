@@ -15,7 +15,7 @@ const PORT =  5000;
 
 const app = express();
 app.use(cookieParser());
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+app.use(cors({ origin: 'https://zerodha-5j1n.vercel.app', credentials: true }));
 app.use(bodyParser.json());
 
 mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })

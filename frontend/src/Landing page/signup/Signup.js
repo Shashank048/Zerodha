@@ -19,12 +19,23 @@ function Signup() {
     password,
    })
    .then((response) => {
-     console.log(response,"RES");
-   })
-   .catch((error) => {
-    console.log(error,"ERR");
-   });
-  };
+    const data = response.data;
+    if (response.status === 200) {
+      setSuccess('Signup successful!');
+      setError(null);
+      setTimeout(() => {
+        window.location.href = 'https://zerodha-fdty.vercel.app/dashboard';
+      }, 3000);
+    } else {
+      setError(data.msg);
+      setSuccess(null);
+    }
+  })
+  .catch(error => {
+    console.log(error);
+    setError('Server error');
+    setSuccess(null);
+  });
 
 
       

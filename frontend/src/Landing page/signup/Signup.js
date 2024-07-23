@@ -14,11 +14,11 @@ function Signup() {
     setError(null); // Clear any previous errors
 
    axios
-   .post("https://zerodha-7nh0.onrender.com/signup",{
-    email,
-    password,
-   })
-   .then((response) => {
+  .post("https://zerodha-7nh0.onrender.com/signup", {
+    email: email,
+    password: password,
+  })
+  .then((response) => {
     const data = response.data;
     if (response.status === 200) {
       setSuccess('Signup successful!');
@@ -31,11 +31,12 @@ function Signup() {
       setSuccess(null);
     }
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
     setError('Server error');
     setSuccess(null);
   });
+
 
 
       

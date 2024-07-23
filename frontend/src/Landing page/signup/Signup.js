@@ -22,7 +22,7 @@ function Signup() {
         setSuccess('Signup successful!');
         setError(null);
         setTimeout(() => {
-          window.location.href = 'https://zerodha-fdty.vercel.app/dashboard';
+          window.location.replace = 'https://zerodha-fdty.vercel.app/dashboard';
         }, 3000);
       } else {
         setError(response.data.msg);

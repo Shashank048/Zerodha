@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 
-
- function Signup() {
+function Signup() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
@@ -11,21 +10,24 @@ import axios from 'axios';
   const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
-  event.preventDefault();
-  setError(null); // Clear any previous errors
+    event.preventDefault();
+    setError(null); // Clear any previous errors
 
-    
-    axios.post("https://zerodha-7nh0.onrender.com/signup", {
-        email,
-        password,
-      })
-      .then((response) => {
-        console.log(response, "RES");
-      })
-      .catch((error) => {
-        console.log(error, "ERR");
-      });
- 
+   axios
+   .post("https://zerodha-7nh0.onrender.com/signup",{
+    email,
+    password,
+   })
+   .then((response) => {
+     console.log(response,"RES");
+   })
+   .catch((error) => {
+    console.log(error,"ERR");
+   });
+  };
+
+
+      
   // rest of the component
       return (
     <div className="container border-bottom">
@@ -73,7 +75,6 @@ import axios from 'axios';
               Sign in
             </button>
             {error && <div style={{ color: 'red' }}>{error}</div>}
-            {success && <div style={{ color: 'green' }}>{success}</div>}
           </form>
 
           <br />
@@ -117,4 +118,5 @@ import axios from 'axios';
     </div>
   );
 }
-export default signup;
+
+export default Signup;

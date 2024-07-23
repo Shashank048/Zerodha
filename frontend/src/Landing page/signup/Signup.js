@@ -21,7 +21,7 @@ function Signup() {
       if (response.status === 200) {
         setSuccess('Signup successful!');
         setError(null);
-          window.location.replace('https://zerodha-fdty.vercel.app/dashboard');
+          window.location.replace('https://zerodha-rose.vercel.app/dashboard');
       } else {
         setError(response.data.msg);
         setSuccess(null);

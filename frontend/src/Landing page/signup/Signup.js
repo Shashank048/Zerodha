@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
-import SignupService from 'path-to-signup-service'; 
 
-export default function Signup() {
+
+ function Signup() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
@@ -117,3 +117,4 @@ export default function Signup() {
     </div>
   );
 }
+export default signup;

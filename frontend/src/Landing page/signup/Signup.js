@@ -19,9 +19,11 @@ function Signup() {
       });
 
       if (response.status === 200) {
-        setSuccess('Signup successful!');
-        setError(null);
-          window.location.replace('https://zerodha-rose.vercel.app/dashboard');
+       setSuccess('Signup successful!');
+       setError(null);
+       setTimeout(() => {
+        window.location.href = 'https://zerodha-rose.vercel.app/dashboard';
+       }, 100);
       } else {
         setError(response.data.msg);
         setSuccess(null);

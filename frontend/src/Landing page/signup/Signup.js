@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 function Signup() {
@@ -12,38 +12,32 @@ function Signup() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     setError(null); // Clear any previous errors
+    try {
+      const response = await axios.post('https://zerodha-7nh0.onrender.com/signup', { // Replace with your actual backend URL
+        email,
+        password,
+      });
 
-   axios
-  .post("https://zerodha-7nh0.onrender.com/signup", {
-    email: email,
-    password: password,
-  })
-  .then((response) => {
-    const data = response.data;
-    if (response.status === 200) {
-      setSuccess('Signup successful!');
-      setError(null);
-      setTimeout(() => {
-        window.location.href = 'https://zerodha-fdty.vercel.app/dashboard';
-      }, 3000);
-    } else {
-      setError(data.msg);
+      if (response.status === 200) {
+        setSuccess('Signup successful!');
+        setError(null);
+        setTimeout(() => {
+          window.location.href = 'https://zerodha-fdty.vercel.app/dashboard';
+        }, 3000);
+      } else {
+        setError(response.data.msg);
+        setSuccess(null);
+      }
+    } catch (err) {
+      console.log(err);
+      setError('Server error');
       setSuccess(null);
     }
-  })
-  .catch((error) => {
-    console.log(error);
-    setError('Server error');
-    setSuccess(null);
-  });
+  };
 
-
-
-      
-  // rest of the component
-      return (
+  return (
     <div className="container border-bottom">
-      <img  
+      <img
         src="media/logo.svg"
         alt="Logo"
         className="bar"
@@ -56,7 +50,7 @@ function Signup() {
         <div className="col-4 p-5">
           <h1>Signup now </h1>
           <p className="text-muted">Or track your existing application.</p>
-          <form id="signup-form"  onSubmit={handleSubmit}>
+          <form id="signup-form" action="/signup" method="post" onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="exampleInputEmail1">Email address : </label>
               &nbsp;&nbsp;&nbsp;&nbsp;
@@ -65,8 +59,8 @@ function Signup() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-            </div>  
-            <br/>
+            </div>
+            <br />
             <div className="form-group">
               <label htmlFor="exampleInputPassword1">Password :  </label>
               &nbsp; &nbsp; &nbsp; &nbsp;
@@ -87,17 +81,16 @@ function Signup() {
               Sign in
             </button>
             {error && <div style={{ color: 'red' }}>{error}</div>}
+            {success && <div style={{ color: 'green' }}>{success}</div>}
           </form>
-
           <br />
           <br />
           <div className="col-6">
-            <a href="/login" style={{ textDecoration: "none", fontSize:"0.7em" }}>
-            Want to open an NRI account?
+            <a href="/login" style={{ textDecoration: "none", fontSize: "0.7em" }}>
+              Want to open an NRI account?
             </a>
           </div>
         </div>
-
         <div className="row">
           <div
             className="text-center text-muted border-top"

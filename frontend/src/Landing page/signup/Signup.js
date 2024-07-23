@@ -23,7 +23,7 @@ function Signup() {
        setError(null);
        setTimeout(() => {
         window.location.href = 'https://zerodha-rose.vercel.app/dashboard';
-       }, 100);
+       });
       } else {
         setError(response.data.msg);
         setSuccess(null);

@@ -83,7 +83,7 @@ function Signup() {
             {error && <div style={{ color: 'red' }}>{error}</div>}
             {success && <div style={{ color: 'green' }}>{success}</div>}
           </form>
-          <br />
+         
           <br />
           <div className="col-6">
             <a href="/login" style={{ textDecoration: "none", fontSize: "0.7em" }}>

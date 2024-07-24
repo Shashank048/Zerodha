@@ -21,7 +21,7 @@
         padding: 1rem;
     }
 
-    h1 > element.style {
+    h1{
     margin: auto;
     width: 40rem;
 }

@@ -1,1 +1,7 @@
-.
+@media screen and (max-width: 768px) {
+    .sa {
+        padding: 2rem !important;
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}

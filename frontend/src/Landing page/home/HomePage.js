@@ -7,7 +7,6 @@ import Education from './Education';
 import OpenAccount from '../OpenAccount'; 
 import Navbar from '../Navbar';
 
-
 function HomePage() {
     return ( 
         <>

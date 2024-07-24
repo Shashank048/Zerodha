@@ -21,4 +21,18 @@
     img {
         width: 500%;
     }
+
+    .mt-5{
+      margin-top:3rem !important;
+      margin:auto;
+      width:100%;
+
+    .h1{
+       margin:auto;
+       width:50rem;
+    }
+
+    .mb-5{
+      margin:auto;
+      width:50rem;
 }

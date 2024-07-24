@@ -11,7 +11,6 @@ import Navbar from '../Navbar';
 function HomePage() {
     return ( 
         <>
-      
           <Navbar/>
           <Hero/>
           <Awards/>

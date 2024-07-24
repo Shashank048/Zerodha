@@ -6,12 +6,12 @@ import Pricing from './Pricing';
 import Education from './Education';
 import OpenAccount from '../OpenAccount'; 
 import Navbar from '../Navbar';
-import Award from './Award.css';
+
 
 function HomePage() {
     return ( 
         <>
-          <Award>
+      
           <Navbar/>
           <Hero/>
           <Awards/>

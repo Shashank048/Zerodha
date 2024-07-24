@@ -5,34 +5,39 @@
         width: 100%;
     }
 
-    .p-5{
-         padding: 1rem !important;
+    .p-5 {
+        padding: 1rem !important;
     }
-    
-     .container {
+
+    .container {
         padding: 1rem;
     }
+
     .row {
         flex-direction: column;
     }
+
     .col-6 {
         padding: 1rem;
     }
+
     img {
-        width: 500%;
+        width: 100%; /* Ensure the image fits within its container */
     }
 
-    .mt-5{
-      margin-top:3rem !important;
-      margin:auto;
-      width:100%;
-
-    .h1{
-       margin:auto;
-       width:50rem;
+    .mt-5 {
+        margin-top: 3rem !important;
+        margin: auto;
+        width: 100%;
     }
 
-    .mb-5{
-      margin:auto;
-      width:50rem;
+    h1 {
+        margin: auto;
+        max-width: 100%; /* Adjust to ensure proper centering */
+    }
+
+    .mb-5 {
+        margin: auto;
+        max-width: 100%; /* Adjust to ensure proper centering */
+    }
 }

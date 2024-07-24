@@ -1,7 +1,22 @@
-@media screen {
-     sa{
-        padding: 2rem !important;
-        flex: 0 0 auto;
-        width: 50%;
+/* Base styles */
+.sa {
+    padding: 2rem !important;
+    flex: 0 0 auto;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .sa {
+        padding: 1rem !important;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .element {
+        margin: 0.5rem 0;
     }
 }

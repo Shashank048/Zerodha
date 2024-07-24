@@ -24,12 +24,13 @@
     h1{
     margin: auto;
     width: 40rem;
-  }
+    }
 
-    h1 > p{
-     margin: auto;
-    width: 40rem;
-    } 
+    p.mb-5{
+      margin-bottom: 2rem !important;
+       margin: auto;
+        width: 40rem;
+       }
     .mb-5 {
         margin: auto;
         max-width: 100%; /* Adjust to ensure proper centering */

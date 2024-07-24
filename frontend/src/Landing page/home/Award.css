@@ -21,10 +21,6 @@
         padding: 1rem;
     }
 
-    img {
-        width: 100%; /* Ensure the image fits within its container */
-    }
-
     .mt-5 {
         margin-top: 3rem !important;
         margin: auto;
@@ -40,4 +36,10 @@
         margin: auto;
         max-width: 100%; /* Adjust to ensure proper centering */
     }
+
+    img {
+        width: 100%; /* Ensure the image fits within its container */
+    }
+
+    
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Award.css"
+
 
 function Awards() {
     return ( 

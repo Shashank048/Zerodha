@@ -3,7 +3,7 @@ import "./Award.css"
 
 function Awards() {
     return ( 
-        <div className='container mt-5'class=".sa">
+        <div className='container mt-5 sa'>
             <div className='row'>
                 <div className='col-6 p-5'>
                     <img src='media/largestBroker.svg'/>

@@ -1,8 +1,5 @@
 /* Base styles */
 
-element.style {
-    width: 100%;
-}
 .container {
     display: flex;
     flex-direction: column;
@@ -45,6 +42,9 @@ element.style {
 
 /* Specific styling for mobile screens */
 @media screen and (max-width: 768px) {
+    element.style {
+    width: 100%;
+}
     .sa {
         padding: 2rem !important;
         flex: 0 0 auto;

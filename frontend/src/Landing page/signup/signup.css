@@ -1,5 +1,5 @@
 @media screen and (max-width: 375.2px) {
-     .col-7 {
+     msg > col-7 {
         width: 94.3333rem;
     }
 }

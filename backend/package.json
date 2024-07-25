@@ -5,7 +5,7 @@
   "scripts": {
     "start": "nodemon index.js"
   },
-  "proxy": "https://zerodha-84fr.vercel.app",
+  "proxy": "https://zerodha-1.onrender.com",
   "author": "",
   "license": "ISC",
   "description": "",

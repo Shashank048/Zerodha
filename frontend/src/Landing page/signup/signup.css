@@ -1,5 +1,5 @@
-@media screen and (max-width: 375.2px) {
-     .msg > col-7 {
-        width: 94.3333rem;
-    }
+@media (max-width: 375.2px) {
+  .msg > .col-7 {
+    width: 100%; /* or a percentage/pixel value that works for your design */
+  }
 }

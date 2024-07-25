@@ -52,7 +52,7 @@ function Signup() {
           <p className="sp text-muted">Or track your existing application.</p>
           <form id="signup-form" action="/signup" method="post" onSubmit={handleSubmit}>
             <div className="spd form-group">
-              <label htmlFor="exampleInputEmail1">Email address : </label>
+              <label htmlFor="exampleInputEmail1">Email address: </label>
               &nbsp;&nbsp;&nbsp;&nbsp;
               <input
                 type="email"

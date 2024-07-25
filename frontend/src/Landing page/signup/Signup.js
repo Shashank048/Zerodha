@@ -49,7 +49,7 @@ function Signup() {
         </div>
         <div className="col-4 p-5">
           <h1 className="ds">Signup now </h1>
-          <p className="text-muted">Or track your existing application.</p>
+          <p className="sp text-muted">Or track your existing application.</p>
           <form id="signup-form" action="/signup" method="post" onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="exampleInputEmail1">Email address : </label>

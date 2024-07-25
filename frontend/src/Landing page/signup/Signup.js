@@ -23,8 +23,7 @@ function Signup() {
        setError(null);
        setTimeout(() => {
         window.location.href = 'https://zerodha-rose.vercel.app/dashboard';
-       });
-      } else {
+       });      } else {
         setError(response.data.msg);
         setSuccess(null);
       }
@@ -36,7 +35,7 @@ function Signup() {
   };
 
   return (
-    <div className="col-12 col-md-6 p-5 text-center">
+    <div className="container border-bottom">
       <img
         src="media/logo.svg"
         alt="Logo"

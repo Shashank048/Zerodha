@@ -36,7 +36,7 @@ function Signup() {
   };
 
   return (
-    <div className="container border-bottom">
+    <div className="container border-bottom col-12 col-md-6 p-5 text-center">
       <img
         src="media/logo.svg"
         alt="Logo"

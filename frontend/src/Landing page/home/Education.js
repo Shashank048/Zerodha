@@ -1,4 +1,4 @@
-Education.js import React from "react";
+ import React from "react";
 
 function Education() {
   return (

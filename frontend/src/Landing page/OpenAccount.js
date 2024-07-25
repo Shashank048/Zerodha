@@ -1,4 +1,4 @@
-openAccount.js import React from "react";
+import React from "react";
 
 function OpenAccount() {
   return (
@@ -10,7 +10,7 @@ function OpenAccount() {
             Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and
             F&O trades.
           </p>
-          <button>
+          <button
             className="btn btn-primary fs-5 mb-5"
             style={{ width: "60%", maxWidth: "300px", margin: "0 auto" }}>
             <a
@@ -26,3 +26,4 @@ function OpenAccount() {
 }
 
 export default OpenAccount;
+

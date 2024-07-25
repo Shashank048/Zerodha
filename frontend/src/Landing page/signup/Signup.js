@@ -51,7 +51,7 @@ function Signup() {
           <h1 className="ds">Signup now </h1>
           <p className="sp text-muted">Or track your existing application.</p>
           <form id="signup-form" action="/signup" method="post" onSubmit={handleSubmit}>
-            <div className="form-group">
+            <div className="spd form-group">
               <label htmlFor="exampleInputEmail1">Email address : </label>
               &nbsp;&nbsp;&nbsp;&nbsp;
               <input
@@ -61,7 +61,7 @@ function Signup() {
               />
             </div>
             <br />
-            <div className="form-group">
+            <div className="spd form-group">
               <label htmlFor="exampleInputPassword1">Password :  </label>
               &nbsp; &nbsp; &nbsp; &nbsp;
               <input

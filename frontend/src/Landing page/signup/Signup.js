@@ -44,7 +44,7 @@ function Signup() {
         style={{ width: "10%" }}
       />
       <div className="row p-5 mt-5 text-center border-top">
-        <div className="col-7 p-5 mgsd">
+        <div className="col-7 p-5 mgs">
           <img src="media/SignupPage.png" style={{ width: "90%" }} />
         </div>
         <div className="col-4 p-5">

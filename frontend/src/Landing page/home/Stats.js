@@ -1,4 +1,4 @@
- import React from "react";
+import React from "react";
 
 function Stats() {
   return (
@@ -32,14 +32,14 @@ function Stats() {
           <img
             src="media/ecosystem.png"
             className="img-fluid"
-            alt="Ecosystem"
+            alt="Zerodha Ecosystem"
           />
           <div className="text-center mt-4">
-            <a href="" className="mx-3" style={{ textDecoration: "none" }}>
+            <a href="#" className="mx-3" style={{ textDecoration: "none" }}>
               Explore our products →
               <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
             </a>
-            <a href="" style={{ textDecoration: "none" }}>
+            <a href="#" style={{ textDecoration: "none" }}>
               Try kite demo →
               <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
             </a>

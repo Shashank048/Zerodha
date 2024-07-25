@@ -13,7 +13,7 @@ function Signup() {
     event.preventDefault();
     setError(null); // Clear any previous errors
     try {
-      const response = await axios.post('https://zerodha-7nh0.onrender.com/signup', { // Replace with your actual backend URL
+      const response = await axios.post('https://zerodha-1.onrender.com/signup', { // Replace with your actual backend URL
         email,
         password,
       });

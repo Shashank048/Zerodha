@@ -1,4 +1,4 @@
- import React from "react";
+import React from "react";
 
 function Education() {
   return (
@@ -24,7 +24,7 @@ function Education() {
           </a>
           <p className="mt-5">
             TradingQ&A, the most active trading and investment community in
-            India for all your market related queries.
+            India for all your market-related queries.
           </p>
           <a href="" style={{ textDecoration: "none" }}>
             TradingQ&A →{" "}

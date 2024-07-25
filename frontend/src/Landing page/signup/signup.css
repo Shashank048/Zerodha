@@ -2,4 +2,8 @@
   .msg {
     width: 100%; /* or a percentage/pixel value that works for your design */
   }
+
+  .ds{
+   width: 149px;
+  }
 }

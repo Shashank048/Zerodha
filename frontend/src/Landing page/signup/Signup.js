@@ -77,7 +77,7 @@ function Signup() {
                 id="exampleCheck1"
               />
             </div>
-            <button id="signup-btn" type="submit" className="btn btn-primary">
+            <button id="signup-btn" type="submit" className="sps btn btn-primary">
               Sign in
             </button>
             {error && <div style={{ color: 'red' }}>{error}</div>}

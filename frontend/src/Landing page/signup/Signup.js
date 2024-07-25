@@ -85,7 +85,7 @@ function Signup() {
           </form>
          
           <br />
-          <div className="col-6">
+          <div className=" hi col-6">
             <a href="/login" style={{ textDecoration: "none", fontSize: "0.7em" }}>
               Want to open an NRI account?
             </a>

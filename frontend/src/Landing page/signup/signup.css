@@ -1,4 +1,5 @@
-@media screen{
-    .mgsd>col-7{
-       width:94.3333rem;
+@media screen and (max-width: 375.2px) {
+    .mgsd > col-7 {
+        width: 94.3333rem;
     }
+}

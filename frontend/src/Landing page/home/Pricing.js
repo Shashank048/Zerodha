@@ -1,4 +1,3 @@
-pricing.js 
 import React from "react";
 
 function Pricing() {

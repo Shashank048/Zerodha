@@ -3,7 +3,7 @@ import React from "react";
 function Hero() {
   return (
     <section className="container-fluid w-full" id="supportHero">
-      <div className="p-5 me-3 d-flex justify-content-between align-items-center" id="supportWrapper">
+      <div className="p-5 me-3 d-flex justify-content-between align-items-center col-lg-6 col-md-12 p-3" id="supportWrapper">
         <h4 class=" p-3 margin-right: 1rem">Support Portal</h4>
         <a href="" style={{ textDecoration: "none" }}>
           Track Tickets

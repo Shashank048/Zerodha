@@ -10,27 +10,27 @@ function Universe() {
           Extend your trading and investment experience even further with our
           partner platforms
         </p>
-        <div className="col-4 p-3 mt-5">
+        <div className="col-lg-4 p-3 mt-5">
           <img src="media/smallcaseLogo.png" />
           <p className="text-small text-muted mt-2 fs-12">Thematic investment platform</p>
         </div>
-        <div className="col-4 p-3 mt-5 ">
+        <div className="col-lg-4 p-3 mt-5 ">
           <img src="media/streakLogo.png"  style={{height:"2.9em"}} />
           <p className="text-small text-muted mt-2 fs-12">Algo & strategy platform</p>
         </div>
-        <div className="col-4 p-3 mt-5">
+        <div className="col-lg-4 p-3 mt-5">
           <img src="media/sensibullLogo.svg"  style={{height:"1.8em"}} />
           <p className="text-small text-muted mt-2 fs-12">Options trading platform</p>
         </div>
-        <div className="col-4 p-3 mt-4">
+        <div className="col-lg-4 p-3 mt-4">
           <img src="media/zerodhaFundhouse.png"  style={{height:"3.1em"}}/>
           <p className="text-small text-muted mt-2">Asset management</p>
         </div>
-        <div className="col-4 p-3 mt-4">
+        <div className="col-lg-4 p-3 mt-4">
           <img src="media/tijori.svg" style={{height:"3.1em"}}/>
           <p className="text-small text-muted mt-2">Fundamental research platform</p>
         </div>
-        <div className="col-4 p-3 mt-4">
+        <div className="col-lg-4 p-3 mt-4">
           <img src="media/dittoLogo.png" style={{height:"3.1em"}}/>
           <p className="text-small text-muted mt-2">Insurance</p>
         </div>

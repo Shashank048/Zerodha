@@ -1,4 +1,5 @@
 import React from 'react'
+import "./product.css"
 
 function RightSection({imageURL, productName, productDescripion, learnMore}) {
   return (

@@ -47,7 +47,7 @@ function Signup() {
         <div className="col-lg-7 p-3 msg">
           <img src="media/SignupPage.png" style={{ width: "90%" }} />
         </div>
-        <div className="col-4 p-5">
+        <div className="col-lg-4 p-5">
           <h1 className="ds">Signup now </h1>
           <p className="sp text-muted">Or track your existing application.</p>
           <form id="signup-form" action="/signup" method="post" onSubmit={handleSubmit}>

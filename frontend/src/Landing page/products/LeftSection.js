@@ -16,7 +16,7 @@ function LeftSection({
                 <img src={imageURL}/>
             </div>
             <div className="pe col-6 p-5 mt-5">
-                <h1>{productName}</h1>
+                <h1 className="pj">{productName}</h1>
                 <p>{productDescripion}</p>
                 <div>
                    <a href={tryDemo} style={{textDecoration:"none"}}>Try demo →</a>

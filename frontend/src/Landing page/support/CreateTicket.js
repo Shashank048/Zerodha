@@ -5,7 +5,7 @@ function CreateTicket() {
     <div className="container">
       <div className="row p-5 mt-5 mb-5">
         <h1 className="fs-2">To create a ticket, select a relevant topic</h1>
-        <div className="col-4 p-5 mt-2 mb-2">
+        <div className="col-lg-4 p-5 mt-2 mb-2">
           <h4 className="">
             <i class="fa fa-plus-circle" aria-hidden="true"></i> Account Opening
           </h4>
@@ -34,7 +34,7 @@ function CreateTicket() {
           </a>
           <br />
         </div>
-        <div className="col-4 p-5 mt-2 mb-2">
+        <div className="col-lg-4 p-5 mt-2 mb-2">
           <h4 className=""><img src="media/user-regular.svg" style={{width:"16px"}}/>&nbsp;
           Your Zerodha Account
           </h4>
@@ -63,7 +63,7 @@ function CreateTicket() {
           </a>
           <br />
         </div>
-        <div className="col-4 p-5 mt-2 mb-2">
+        <div className="col-lg-4 p-5 mt-2 mb-2">
           <h4 className="">
             <img src="media/chart-line-solid.svg"style={{width:"16px"}}/>&nbsp;  Trading and Markets
           </h4>
@@ -92,7 +92,7 @@ function CreateTicket() {
           </a>
           <br />
         </div>
-        <div className="col-4 p-5 mt-2 mb-2">
+        <div className="col-lg-4 p-5 mt-2 mb-2">
           <h4 className="">
             <img src="media/credit-card-regular.svg"style={{width:"16px"}}/>&nbsp; Funds
           </h4>
@@ -113,7 +113,7 @@ function CreateTicket() {
           </a>
           <br />
         </div>
-        <div className="col-4 p-5 mt-2 mb-2">
+        <div className="col-lg-4 p-5 mt-2 mb-2">
           <h4 className="">
             <img src="media/circle-notch-solid.svg"style={{width:"16px"}}/>&nbsp; Console
           </h4>
@@ -142,7 +142,7 @@ function CreateTicket() {
           </a>
           <br />
         </div>
-        <div className="col-4 p-5 mt-2 mb-2">
+        <div className="col-lg-4 p-5 mt-2 mb-2">
           <h4 className="">
             <img src="media/coins-solid.svg"style={{width:"16px"}}/>&nbsp; Coin
           </h4>

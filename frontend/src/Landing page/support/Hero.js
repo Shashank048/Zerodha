@@ -3,7 +3,7 @@ import React from "react";
 function Hero() {
   return (
     <section className="container-fluid w-full" id="supportHero">
-      <div className="p-5" id="supportWrapper">
+      <div className="p-2" id="supportWrapper">
         <h4>Support Portal</h4>
         <a href="" style={{ textDecoration: "none" }}>
           Track Tickets

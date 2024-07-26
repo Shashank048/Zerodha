@@ -4,6 +4,7 @@ import LeftSection from "./LeftSection";
 import RightSection from "./RightSection";
 import Universe from "./Universe";
 import Navbar from "../Navbar";
+import "./product.css"
 
 function ProductPage() {
   return (

@@ -54,6 +54,7 @@ function Signup() {
             <div className="spd form-group">
               <label htmlFor="exampleInputEmail1">Email address: </label>
               &nbsp;&nbsp;&nbsp;&nbsp;
+             <br/>
               <input
                 type="email"
                 value={email}

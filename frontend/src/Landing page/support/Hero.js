@@ -4,7 +4,7 @@ function Hero() {
   return (
     <section className="container-fluid w-full" id="supportHero">
       <div className="p-2 g-col-6" id="supportWrapper">
-        <h4 class=" p-3 left-side">Support Portal</h4>
+        <h4 className=" p-3 left-side">Support Portal</h4>
         <a href="" style={{ textDecoration: "none" }}>
           Track Tickets
         </a>

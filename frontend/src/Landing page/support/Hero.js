@@ -2,20 +2,22 @@ import React from "react";
 
 function Hero() {
   return (
-    <section className="container-fluid w-full" id="supportHero">
-      <div className="p-2 g-col-6" id="supportWrapper">
-        <h4 className=" p-3 left-side">Support Portal</h4>
-        <a href="" style={{ textDecoration: "none" }}>
-          Track Tickets
-        </a>
+    <section className="container-fluid" id="supportHero">
+      <div className="row justify-content-center">
+        <div className="col-12 col-md-8 p-5 " id="supportWrapper">
+          <h4>Support Portal</h4>
+          <a href="" style={{ textDecoration: "none" }}>
+            Track Tickets
+          </a>
+        </div>
       </div>
-      <div className="row p-5 m-3">
+      <div className="row p-5 m-0">
         <div className="col-lg-6 col-md-12 p-1">
-          <h1 className="fs-3 ">
+          <h1 className="fs-3">
             Search for an answer or browse help topics to create a ticket
           </h1>
           <input
-            className="form my-2 col-12"
+            className="form-control my-2 col-12"
             placeholder="Eg. how do I activate F&O"
           />
           <br />

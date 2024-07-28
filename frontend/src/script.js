@@ -1,5 +1,5 @@
 // frontend/script.js
-const apiUrl = 'https://zerodha-7nh0.onrender.com'; // your backend server URL
+const apiUrl = 'https://zerodha-w1ga.onrender.com'; // your backend server URL
 
 document.getElementById('signup-btn').addEventListener('click', async () => {
   try {

@@ -13,7 +13,7 @@ const BuyActionWindow = ({ uid }) => {
   const { closeBuyWindow } = useContext(GeneralContext);
 
   const handleBuyClick = () => {
-    axios.post("https://zerodha-w1ga.onrender.com/AllHolding", {
+    axios.post("https://zerodha-2rz5.vercel.app/AllHolding", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,

@@ -14,7 +14,7 @@ function Signup() {
     event.preventDefault();
     setError(null); // Clear any previous errors
     try {
-      const response = await axios.post(/signup', { // Replace with your actual backend URL
+      const response = await axios.post('https://zerodha-2rz5.vercel.app/signup', { // Replace with your actual backend URL
         email,
         password,
       });
